@@ -1,3 +1,9 @@
 {
-  "name": "mediatr-js"
+  "name": "mediatr-js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^4.1.3"
+  }
 }
