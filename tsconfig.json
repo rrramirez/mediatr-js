@@ -2,7 +2,7 @@
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "lib": ["DOM","ES2020"],
-    "module": "ES2020",
+    "module": "CommonJS",
     "moduleResolution": "node",
     "target": "ES2020",
     "outDir": "./lib",

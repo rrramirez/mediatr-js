@@ -1,7 +1,10 @@
 {
   "name": "mediatr-js",
+  "version": "0.0.1",
+  "main": "/lib/index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "start": "node ./lib"
   },
   "devDependencies": {
     "typescript": "^4.1.3"
