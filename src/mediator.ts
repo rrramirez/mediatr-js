@@ -1,4 +1,4 @@
-import glob from "glob";
+import * as glob from "glob";
 import { CommandHandle, EventHandle, CommandHandler, EventHandler } from "./handlers";
 import {CommandMessage, EventMessage} from './messages';
 
@@ -45,8 +45,21 @@ export class Mediator{
         }
     }
 
-    registerFolder(path: string){
-        
+    /**
+     * 
+     * @param pattern Pattern used to find and register modules with CommandHandlers or EventHandlers
+     */
+    async registerWithPattern(pattern: string){
+        const filesFound = glob.sync(pattern)
+
+        for (let index = 0; index < filesFound.length; index++) {
+            const fileName = filesFound[index];
+            const module = await import(fileName);
+            Object.keys(module).forEach(key => {
+                if(module[key].handle && (module[key].command || module[key].event))
+                    this.register(module[key]);
+            })
+        }
     }
 
     async publishAsync(eventMessage: EventMessage){

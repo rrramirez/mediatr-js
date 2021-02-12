@@ -1,4 +1,5 @@
 import { Mediator } from './mediator';
+import * as path from 'path';
 
 export {Mediator, IMediator} from './mediator';
 export {CommandHandle, EventHandle, CommandHandler, EventHandler} from './handlers';
@@ -12,6 +13,9 @@ async function main(){
             return payload.toUpperCase();
         }
     });
+    const pattern = path.join(__dirname, '/handlers/*.js');
+    console.log(pattern)
+    await commandMediator.registerWithPattern(pattern)
     
     const response = await commandMediator.sendAsync<string>({
         command: 'CREATE.USER',
