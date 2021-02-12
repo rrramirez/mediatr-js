@@ -1,3 +1,4 @@
+import glob from "glob";
 import { CommandHandle, EventHandle, CommandHandler, EventHandler } from "./handlers";
 import {CommandMessage, EventMessage} from './messages';
 
@@ -42,6 +43,10 @@ export class Mediator{
                 this.eventHandlers[event] = [];
             this.eventHandlers[event].push(handler.handle);
         }
+    }
+
+    registerFolder(path: string){
+        
     }
 
     async publishAsync(eventMessage: EventMessage){

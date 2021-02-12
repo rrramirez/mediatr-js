@@ -37,9 +37,113 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
+            ["@types/glob", "npm:7.1.3"],
+            ["glob", "npm:7.1.6"],
             ["typescript", "patch:typescript@npm%3A4.1.3#builtin<compat/typescript>::version=4.1.3&hash=cc6730"]
           ],
           "linkType": "SOFT",
+        }]
+      ]],
+      ["@types/glob", [
+        ["npm:7.1.3", {
+          "packageLocation": "./.yarn/cache/@types-glob-npm-7.1.3-44516e2aab-633bf1dda9.zip/node_modules/@types/glob/",
+          "packageDependencies": [
+            ["@types/glob", "npm:7.1.3"],
+            ["@types/minimatch", "npm:3.0.3"],
+            ["@types/node", "npm:14.14.26"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/minimatch", [
+        ["npm:3.0.3", {
+          "packageLocation": "./.yarn/cache/@types-minimatch-npm-3.0.3-c8b0625f84-672ccdac19.zip/node_modules/@types/minimatch/",
+          "packageDependencies": [
+            ["@types/minimatch", "npm:3.0.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/node", [
+        ["npm:14.14.26", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-14.14.26-8e9465b306-03067a0bdb.zip/node_modules/@types/node/",
+          "packageDependencies": [
+            ["@types/node", "npm:14.14.26"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["balanced-match", [
+        ["npm:1.0.0", {
+          "packageLocation": "./.yarn/cache/balanced-match-npm-1.0.0-951a2ad706-f515a605fe.zip/node_modules/balanced-match/",
+          "packageDependencies": [
+            ["balanced-match", "npm:1.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["brace-expansion", [
+        ["npm:1.1.11", {
+          "packageLocation": "./.yarn/cache/brace-expansion-npm-1.1.11-fb95eb05ad-4c878e25e4.zip/node_modules/brace-expansion/",
+          "packageDependencies": [
+            ["brace-expansion", "npm:1.1.11"],
+            ["balanced-match", "npm:1.0.0"],
+            ["concat-map", "npm:0.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["concat-map", [
+        ["npm:0.0.1", {
+          "packageLocation": "./.yarn/cache/concat-map-npm-0.0.1-85a921b7ee-554e28d9ee.zip/node_modules/concat-map/",
+          "packageDependencies": [
+            ["concat-map", "npm:0.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["fs.realpath", [
+        ["npm:1.0.0", {
+          "packageLocation": "./.yarn/cache/fs.realpath-npm-1.0.0-c8f05d8126-698a91b169.zip/node_modules/fs.realpath/",
+          "packageDependencies": [
+            ["fs.realpath", "npm:1.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["glob", [
+        ["npm:7.1.6", {
+          "packageLocation": "./.yarn/cache/glob-npm-7.1.6-1ce3a5189a-789977b524.zip/node_modules/glob/",
+          "packageDependencies": [
+            ["glob", "npm:7.1.6"],
+            ["fs.realpath", "npm:1.0.0"],
+            ["inflight", "npm:1.0.6"],
+            ["inherits", "npm:2.0.4"],
+            ["minimatch", "npm:3.0.4"],
+            ["once", "npm:1.4.0"],
+            ["path-is-absolute", "npm:1.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["inflight", [
+        ["npm:1.0.6", {
+          "packageLocation": "./.yarn/cache/inflight-npm-1.0.6-ccedb4b908-17c53fc42c.zip/node_modules/inflight/",
+          "packageDependencies": [
+            ["inflight", "npm:1.0.6"],
+            ["once", "npm:1.4.0"],
+            ["wrappy", "npm:1.0.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["inherits", [
+        ["npm:2.0.4", {
+          "packageLocation": "./.yarn/cache/inherits-npm-2.0.4-c66b3957a0-98426da247.zip/node_modules/inherits/",
+          "packageDependencies": [
+            ["inherits", "npm:2.0.4"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["mediatr-js", [
@@ -47,9 +151,40 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["mediatr-js", "workspace:."],
+            ["@types/glob", "npm:7.1.3"],
+            ["glob", "npm:7.1.6"],
             ["typescript", "patch:typescript@npm%3A4.1.3#builtin<compat/typescript>::version=4.1.3&hash=cc6730"]
           ],
           "linkType": "SOFT",
+        }]
+      ]],
+      ["minimatch", [
+        ["npm:3.0.4", {
+          "packageLocation": "./.yarn/cache/minimatch-npm-3.0.4-6e76f51c23-47eab92639.zip/node_modules/minimatch/",
+          "packageDependencies": [
+            ["minimatch", "npm:3.0.4"],
+            ["brace-expansion", "npm:1.1.11"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["once", [
+        ["npm:1.4.0", {
+          "packageLocation": "./.yarn/cache/once-npm-1.4.0-ccf03ef07a-57afc24653.zip/node_modules/once/",
+          "packageDependencies": [
+            ["once", "npm:1.4.0"],
+            ["wrappy", "npm:1.0.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["path-is-absolute", [
+        ["npm:1.0.1", {
+          "packageLocation": "./.yarn/cache/path-is-absolute-npm-1.0.1-31bc695ffd-907e1e3e6a.zip/node_modules/path-is-absolute/",
+          "packageDependencies": [
+            ["path-is-absolute", "npm:1.0.1"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["typescript", [
@@ -57,6 +192,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/typescript-patch-7a9e6321b3-017af99214.zip/node_modules/typescript/",
           "packageDependencies": [
             ["typescript", "patch:typescript@npm%3A4.1.3#builtin<compat/typescript>::version=4.1.3&hash=cc6730"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["wrappy", [
+        ["npm:1.0.2", {
+          "packageLocation": "./.yarn/cache/wrappy-npm-1.0.2-916de4d4b3-519fcda0fc.zip/node_modules/wrappy/",
+          "packageDependencies": [
+            ["wrappy", "npm:1.0.2"]
           ],
           "linkType": "HARD",
         }]
